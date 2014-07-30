@@ -1,0 +1,643 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Basic -->
+	<meta charset="utf-8">
+	<title>EIS - Home page</title>
+	<meta name="keywords" content="HTML5 Template" />
+	<meta name="description" content="Jets - Responsive HTML5 Template">
+	<meta name="author" content="funcoders.com">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" type='image/x-icon' href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/fapple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon/fapple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/fapple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon/fapple-touch-icon-precomposed.png">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/library/bootstrap/bootstrap.min.css" />
+
+	<!-- AWESOME and ICOMOON fonts -->
+	<link rel="stylesheet" href="css/fonts/awesome/css/font-awesome.css"/>
+	<link rel="stylesheet" href="css/fonts/icomoon/style.css"/>
+
+	<!-- Open Sans fonts -->
+	<link rel="stylesheet"  href="css/fontOpenSan.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="css/theme.min.css"/>
+	<link rel="stylesheet" href="css/theme-elements.min.css"/>
+	<link rel="stylesheet" href="css/color/blue.css"/>
+
+	<link rel="stylesheet" href="css/library/animate/animate.min.css"/>
+
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="index">
+
+	<aside class="side-options side-options-right" id="language-options">
+		<div class="side-options-heading">
+
+			<a href="#"><span class="current-language">EN</span>Language</a>
+
+		</div><!-- .side-options-heading -->
+		<div class="side-options-content">
+
+			<ul class="language-list">
+				<li><a class="current" href="EN">English</a></li>
+				<li><a href="SP">Spanish</a></li>
+				<li><a href="RUS">Russian</a></li>
+				<li><a href="FR">French</a></li>
+			</ul>
+
+		</div><!-- .side-options-content -->
+	</aside><!-- .side-options -->
+
+	<header id="header">
+		<aside class="topbar">
+			<div class="container">
+
+				<ul class="touch">
+					<li>
+						<img src="img/phone.png" alt="Phone" title="Phone">
+						<p>713-4888<br />713-4661</p>
+					</li>
+					<li>
+						<img src="img/mail.png" alt="Mail" title="Mail">
+						<p>ictcc@mea.or.th<br /></p>
+					</li>
+					<li>
+						<img src="img/map.png" alt="Map" title="Map">
+						<p>21 Rat Burana Rd., Rat Burana, <br />Rat Burana, Bangkok 10140</p>
+					</li>
+				</ul><!-- .touch -->
+
+				<ul class="user-nav">
+					<li><a href="#login-register" data-toggle="modal" title="Log in">Log In</a></li>
+					<%--<li><a href="#login-register" data-toggle="modal" title="Create an account" class="btn">Register</a></li>--%>
+				</ul>--%>
+
+				<ul class="user-nav" style="display:none">
+					<li><a href="#" title="John Doe"></a></li>
+					<li><a href="#" title="John Doe">John Doe</a> | </li>
+					<li><a href="#" title="Log Out">Log out</a></li>
+				</ul><!-- .user-nav -->
+
+				<%--<ul class="social">
+					<li><a href="#" class="dribbble"></a></li>
+					<li><a href="#" class="pinterest"></a></li>
+					<li><a href="#" class="facebook"></a></li>
+					<li><a href="#" class="twitter"></a></li>
+					<li><a href="#" class="google"></a></li>
+				</ul><!-- .social -->--%>
+
+			</div><!-- .container -->
+		</aside><!-- .topbar -->
+		<div class="navbar megamenu-width">
+			<div class="container">
+
+				<aside id="main-search">
+					<form action="#" method="GET">
+						<a href="#" class="close"><i class="icomoon-close"></i></a>
+						<div class="form-field">
+							<div class="placeholder">
+								<label for="query">search on site...</label>
+								<input class="form-control" type="text" name="query" id="query" />
+							</div>
+						</div>
+					</form>
+				</aside><!-- #main-search -->
+
+				   
+				<div class="navbar-inner">
+
+	                    <a href="index.html" class="logo">
+						<img src="img/logo.png" alt="EIS Website">
+					</a><!-- .logo -->
+
+
+					<ul id="mobile-menu">
+						<li><a href="#login-register" data-toggle="modal" title="Log in">Log In</a></li>
+						<li><a href="#login-register" data-toggle="modal" title="Create an account">Register</a></li>
+						<li>
+							<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+								<i class="fa fa-reorder"></i>
+							</button>
+						</li>
+						<li><a class="btn-search" href="#"><i class="fa fa-search"></i></a></li>
+					</ul><!-- #mobile-menu -->
+
+					<ul id="main-menu" class="collapse navbar-collapse nav slide custom">
+						<li class='active'><a href="index.html">Home<i class="carret"></i><span>Let's Start here</span></a>
+							<ul class="dropdown">
+								<li class='active'><a href="index.html">Default Home Page</a></li>
+								<li><a href="index-2.html">Home Page Stye 2</a></li>
+								<li><a href="index-3.html">Home Page Stye 3</a></li>
+								<li><a href="index-informational.html">Home Page Informational</a></li>
+								<li><a href="index-one-page.html">One Page Home</a></li>
+							</ul>
+						</li>
+						<li class="megamenu"><a href="#">Safety Department ฝปภ.<i class="carret"></i><span>With category</span></a>
+							<ul class="dropdown megamenu-category">
+								<li>
+									<div class="row">
+										<div class="col-md-3">
+
+											<nav class="category-nav">
+												<ul>
+													<li class="current"><a href="#">Category with list</a></li>
+													<li><a href="#">Category with groups</a></li>
+													<li><a href="#">Category mixed</a></li>
+												</ul>
+											</nav><!-- .category-nav" -->
+
+										</div><!-- .col-md-3 -->
+										<div class="col-md-9">
+
+											<div class="category-content">
+												<div class="current">
+
+													<div class="title">
+														<h4>Category with list</h4>
+													</div><!-- .title -->
+
+													<div class="text">
+														<p><i>Pellentesque cursus elit sed mauris vestibulum congue. Proin blandit sagittis convallis.</i></p>
+													</div><!-- .text -->
+													<hr />
+													<div class="row">
+														<div class="col-sm-6">
+
+															<div class="title">
+																<h5>Sub category title</h5>
+															</div><!-- .title -->
+															<ul class="default">
+																<li><a href="#">หัวข้อสถิติ</a>
+																	<ul class="plus">
+																		<li><a href="#">สถิติอุบัติภัยพนักงานที่หยุดงานแยกตามรายเดือนและดัชนีการประสบอุบัติภัย ปีงบประมาณ 2557</a></li>
+																		<li><a href="#">Nunc a vestibulum</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">Nullam</a></li>
+																<li><a href="#">Duis sodales eget</a></li>
+															</ul>
+															<div class="title">
+																<h5>Sub category title</h5>
+															</div><!-- .title -->
+															<ul class="default">
+																<li><a href="#">Cibendum</a></li>
+																<li><a href="#">Nullam eleifend</a></li>
+																<li><a href="#">Vivamus</a></li>
+															</ul>
+
+														</div><!-- .col-sm-6 -->
+														<%--<div class="col-sm-6">
+
+															<div class="title">
+																<h5>Sub category title</h5>
+															</div><!-- .title -->
+															<ul class="default">
+																<li><a href="#">Nunc cursus</a></li>
+																<li><a href="#">Pellentesque</a>
+																	<ul class="circle">
+																		<li><a href="#">Vestibulum</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">Mauris faucibus</a></li>
+																<li><a href="#">Aenean</a>
+																	<ul class="check">
+																		<li><a href="#">Fusce</a></li>
+																		<li><a href="#">Fermentum </a></li>
+																		<li><a href="#">Velit porta</a></li>
+																	</ul>
+																</li>
+																<li><a href="#">Curabitur</a></li>
+																<li><a href="#">Cras facilisis</a></li>
+															</ul>
+
+														</div>--%><!-- .col-sm-6 -->
+													</div><!-- .row -->
+												</div>
+												<div>
+													<div class="title">
+														<h4>ฝ่ายความปลอดภัย อาชีวะอนามัยและสิ่งแวดล้อม</h4>
+													</div><!-- .title -->
+													<div class="text">
+														<p><i>Maecenas ac tortor malesuada, tristique purus nec, pulvinar enim. Vivamus suscipit ultricies ultrices. Morbi egestas nec elit non luctus.</i></p>
+													</div><!-- .text -->
+													<hr />
+													<div class="row">
+														<div class="col-sm-4">
+
+															<a href="#">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Cras pretium</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+															</a>
+
+														</div><!-- .col-sm-4 -->
+														<div class="col-sm-4">
+
+															<a href="#" class="iconbox">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Cras pretium</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+															</a>
+
+														</div><!-- .col-sm-4 -->
+														<div class="col-sm-4">
+
+															<a href="#" class="iconbox">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Morbi consequat</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+
+															</a>
+
+														</div><!-- .col-sm-4 -->
+													</div><!-- .row -->
+													<div class="row">
+														<div class="col-sm-4">
+
+															<a href="#">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Fermentume</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+															</a>
+
+														</div><!-- .col-sm-4 -->
+														<div class="col-sm-4">
+
+															<a href="#">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>In hac habitasse</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+
+															</a><!-- .iconbox -->
+
+														</div><!-- .col-sm-4 -->
+														<div class="col-sm-4">
+
+															<a href="#">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Aliquam erat</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+
+															</a>
+
+														</div><!-- .col-sm-4 -->
+													</div><!-- .row -->
+												</div>
+												<div>
+													<div class="title">
+														<h4>Category mixed</h4>
+													</div><!-- .title -->
+													<div class="text">
+														<p><i> Vivamus suscipit magna ut lorem cursus, vel elementum neque condimentum. Integer sit amet malesuada mi. Ut non sollicitudin leo, vel convallis lacus.</i></p>
+													</div><!-- .text -->
+													<hr />
+													<div class="row">
+														<div class="col-sm-4">
+
+															<a href="#">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Vestibulum</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+
+															</a>
+
+														</div><!-- .col-sm-4 -->
+														<div class="col-sm-4">
+
+															<a href="#">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Nulla nec consequat enim</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+
+															</a>
+
+														</div><!-- .col-sm-4 -->
+														<div class="col-sm-4">
+
+															<a href="#">
+																<div class="iconbox">
+																	<div class="iconbox-heading">
+																		<div class="icon">
+																			<img src="uploads/images/icons/icon.jpg" alt="Icon">
+																		</div>
+																		<div class="title">
+																			<h4><h5>Donec sit</h5></h4>
+																		</div>
+																	</div><!-- .iconbox-heading -->
+																</div><!-- .iconbox -->
+
+															</a>
+
+														</div><!-- .col-sm-4 -->
+													</div><!-- .row -->
+													<hr />
+													<div class="row">
+														<div class="col-sm-6">
+
+															<div class="title">
+																<h5>Sub category title</h5>
+															</div><!-- .title -->
+															<ul class="default">
+																<li><a href="#">Duis sodales eget</a></li>
+																<li><a href="#">Phasellus vel</a>
+																	<ul class="dash">
+																		<li><a href="#">Maecenas malesuada</a></li>
+																		<li><a href="#">Nunc a vestibulum</a></li>
+																	</ul>
+																</li>
+															</ul>
+
+														</div><!-- .col-sm-6 -->
+														<div class="col-sm-6">
+
+															<div class="title">
+																<h5>Sub category title</h5>
+															</div>
+															<ul class="default">
+																<li><a href="#">Donec congue</a></li>
+																<li><a href="#">Pellentesque</a></li>
+																<li><a href="#">Fusce</a></li>
+																<li><a href="#">Velit porta</a></li>
+															</ul>
+
+														</div><!-- .col-sm-6 -->
+													</div><!-- .row -->
+												</div>
+											</div><!-- .category-content -->
+
+										</div><!-- .col-md-9 -->
+									</div>
+								</li>
+							</ul><!-- .megamenu-category -->
+						</li>
+						<li class="megamenu"><a href="#">Megamenu 2<i class="carret"></i><span>With content</span></a>
+							<ul class="dropdown">
+								<li>
+									<div class="row">
+										<div class="col-sm-4">
+
+											<div class="widget">
+												<div class="widget-heading">
+
+													<div class="title title-main">
+														<h5>Latest from Blog</h5>
+													</div>
+
+												</div><!-- .widget-heading -->
+												<div class="widget-content">
+
+													<section class="posts">
+														<article class="post post-mini post-type-text devider-top">
+															<div class="post-heading">
+
+																<div class="thumbnail">
+																	<a class="link" href="blog-single.html">
+																		<span class="btn btn-icon-link"></span>
+																		<img src="uploads/images/content/image_SQ.jpg" alt="Image">
+																	</a>
+																</div><!-- .thumbnail -->
+
+															</div><!-- .post-heading -->
+															<div class="post-content">
+
+																<div class="title">
+																	<h2 class="h5"><a href="blog-single.html">Sed ut perspiciatis unde omnis iste</a></h2>
+																</div><!-- .title -->
+
+															</div><!-- .post-content -->
+														</article><!-- .post -->
+														<article class="post post-mini post-type-music devider-top">
+															<div class="post-heading">
+
+																<div class="thumbnail">
+																	<a class="link" href="blog-single.html">
+																		<span class="btn btn-icon-link"></span>
+																		<img src="uploads/images/content/image_SQ.jpg" alt="Image">
+																	</a>
+																</div><!-- .thumbnail -->
+
+															</div><!-- .post-heading -->
+															<div class="post-content">
+
+																<div class="title">
+																	<h2 class="h5"><a href="blog-single.html">Consequuntur magni dolores</a></h2>
+																</div><!-- .title -->
+
+															</div><!-- .post-content -->
+														</article><!-- .post -->
+													</section>
+
+												</div><!-- .widget-content -->
+											</div><!-- .widget -->
+
+										</div><!-- .col-sm-4 -->
+										<div class="col-sm-4">
+
+											<div class="widget">
+												<div class="widget-heading">
+
+													<div class="title title-main">
+														<h5>Find us on Google Map</h5>
+													</div><!-- .title -->
+
+												</div><!-- .widget-heading -->
+												<div class="widget-content">
+													<iframe class="google-iframe-map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ua/maps?t=m&amp;q=322+Victoria+Street+Darlinghurst+NSW+2010&amp;ie=UTF8&amp;hq=&amp;hnear=322+Victoria+St,+Darlinghurst+New+South+Wales+2010,+%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D1%96%D1%8F&amp;ll=-33.877969,151.222343&amp;spn=0.010689,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+												</div><!-- .widget-content -->
+											</div><!-- .widget -->
+
+										</div><!-- .col-sm-4 -->
+										<div class="col-sm-4">
+
+											<div class="widget">
+												<div class="widget-heading">
+
+													<div class="title title-main">
+														<h5>Simple text widget</h5>
+													</div><!-- .title -->
+
+												</div><!-- .widget-heading -->
+												<div class="widget-content">
+
+													<div class="text">
+														<p>Aliquet blandit, tellus libero scelerisque odio, sit amet tincidunt est leo eget urna.Donec tincidunt neque nulla. Arcu ut aliquet blandit.</p>
+														<p>Praesent quam nibh, viverra vitae tempus at Morbi accumsan, arcu ut aliquet onec tincidunt neque nulla. Tellus libero scelerisque odio, sit amet tincidunt.</p>
+														<p class="text-right"><a href="#" class="btn">Read more</a></p>
+													</div><!-- .text -->
+
+												</div><!-- .widget-content -->
+											</div><!-- .widget -->
+
+										</div><!-- .col-sm-4 -->
+									</div><!-- .row -->
+								</li>
+							</ul><!-- .megamenu -->
+						</li>
+						<li><a href="#">Features<i class="carret"></i><span>Out of the Box</span></a>
+							<ul class="dropdown">
+								<li><a href="features-header-default.html">Layout Header<i class="carret"></i></a>
+									<ul class="dropdown">
+										<li><a href="features-header-default.html">Default</a></li>
+										<li><a href="features-header-1.html">Style 1</a></li>
+										<li><a href="features-header-2.html">Style 2</a></li>
+										<li><a href="features-header-3.html">Style 3</a></li>
+									</ul>
+								</li>
+								<li><a href="features-menu-default.html">Drop Down Menu<i class="carret"></i></a>
+									<ul class="dropdown">
+										<li><a href="features-menu-default.html">Default</a></li>
+										<li><a href="features-menu-custom.html">Custom</a></li>
+									</ul>
+								</li>
+								<li><a href="features-grid.html">Grid System</a></li>
+								<li><a href="features-typography.html">Typography</a></li>
+								<li><a href="features-miscellaneous.html">Miscellaneous</a></li>
+								<li><a href="#">Icons<i class="carret"></i></a>
+									<ul class="dropdown">
+										<li><a href="features-iconawesome.html">Awesome Font</a></li>
+										<li><a href="features-iconicomoon.html">Iconmoon Font</a></li>
+									</ul>
+								</li>
+								<li><a href="features-animation.html">Animation</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Shortcodes<i class="carret"></i><span>Page elements</span></a>
+							<ul class="dropdown">
+								<li><a href="shortcodes-iconbox.html">Icon Box</a></li>
+								<li><a href="shortcodes-teaser.html">Teaser</a></li>
+								<li><a href="shortcodes-alerts-messages.html">Alerts and Messages</a></li>
+								<li><a href="shortcodes-call2action.html">Call to action</a></li>
+								<li><a href="shortcodes-testimonial.html">Testimonial</a></li>
+								<li><a href="shortcodes-tab.html">Tab</a></li>
+								<li><a href="shortcodes-accordion.html">Accordion</a></li>
+								<li><a href="shortcodes-slider.html">Slider</a></li>
+								<li><a href="shortcodes-carousel.html">Carousel</a></li>
+								<li><a href="shortcodes-pricingtables.html">Pricing Tables</a></li>
+								<li><a href="shortcodes-multimedia.html">Multimedia</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Portfolio<i class="carret"></i><span>Our Works</span></a>
+							<ul class="dropdown">
+								<li><a href="portfolio-4col.html">Portfolio 4 columns</a></li>
+								<li><a href="portfolio-3col.html">Portfolio 3 columns</a></li>
+								<li><a href="portfolio-2col.html">Portfolio 2 columns</a></li>
+								<li><a href="portfolio-full.html">Portfolio full width</a></li>
+								<li><a href="portfolio-full-no-margins.html">Portfolio full width (no margins)</a></li>
+								<li><a href="portfolio-full-no-animated.html">Portfolio full width (no animation)</a></li>
+								<li><a href="portfolio-single.html">Single Project</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Pages<i class="carret"></i><span>Inbuilt Templates</span></a>
+							<ul class="dropdown">
+								<li><a href="page-team.html">Our Team</a></li>
+								<li><a href="page-team-member.html">Team member</a></li>
+								<li><a href="page-services.html">Services</a></li>
+								<li><a href="page-faq.html">FAQ</a></li>
+								<li><a href="page-about.html">About Us</a></li>
+								<li><a href="page-404.html">404 Page</a></li>
+								<li><a href="page-login-register.html">Login / Register Page</a></li>
+								<li><a href="blog-default.html">Blog<i class="carret"></i></a>
+									<ul class="dropdown">
+										<li><a href="blog-default.html">Blog (default)</a></li>
+										<li><a href="blog-thumbs.html">Blog (thumbs)</a></li>
+										<li><a href="blog-grid.html">Blog (grid)</a></li>
+										<li><a href="blog-single.html">Single post</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact<i class="carret"></i></a>
+									<ul class="dropdown">
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="contact-2.html">Contact Style 2</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="search-nav">
+							<a href="#" class="btn-search"><i class="fa fa-search"></i></a>
+						</li>
+					</ul><!-- #main-menu -->
+
+				</div><!-- .navbar-inner -->
+
+			</div><!-- .container -->
+		</div><!-- .navbar -->
+	</header><!-- #header -->
+						
+    <form id="form1" runat="server">
+    <div>
+  
+    </div>
+    </form>
+</body>
+</html>
